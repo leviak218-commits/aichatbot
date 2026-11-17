@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Farmer Support System",
+    "slug": "farmer-support-system",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Field Notes to use photos for crop guides.",
+          "cameraPermission": "Allow Field Notes to take photos for crop guides.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/icon.png",
+          "imageWidth": 256
+        }
+      ],
+      "expo-font",
+      "./plugins/withAndroidCleartextTraffic"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.farmersupportsystem"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/icon.png",
+        "backgroundImage": "./assets/icon.png",
+        "monochromeImage": "./assets/icon.png"
+      },
+      "package": "com.farmersupportsystem"
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}

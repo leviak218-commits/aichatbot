@@ -1,0 +1,7 @@
+.env
+backend/.env
+backend/service-account.json
+backend/service-account.json.json
+backend/node_modules/
+node_modules/
+.expo/
